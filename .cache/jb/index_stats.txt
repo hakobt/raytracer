@@ -6,12 +6,12 @@ File /Users/hakob/Projects/RayTracer/src/main.cc: 3 errors
 [49, 13]  - unknown type name 'ray'
 [51, 18]  - redefinition of 'r'
 Processed 1 TUs in
- - real time = 1971ms
- - indexing CPU time = 499ms
- - symbols writing CPU time = 787ms
+ - real time = 1908ms
+ - indexing CPU time = 482ms
+ - symbols writing CPU time = 743ms
  - symbols reading CPU time = 7ms
- - waiting to finish time = 1471ms
-TU [/Users/hakob/Projects/RayTracer/src/main.cc] processed in 499ms and succeed.
+ - waiting to finish time = 1424ms
+TU [/Users/hakob/Projects/RayTracer/src/main.cc] processed in 482ms and succeed.
 
 WAIT TIME:
 Waiting for symbol files took 0ms
