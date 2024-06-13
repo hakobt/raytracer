@@ -1,0 +1,5 @@
+{
+  "toolchains": [],
+  "lsp.clangd.compilation.databases": [],
+  "editor.formatOnSave": true
+}
