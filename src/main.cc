@@ -1,9 +1,13 @@
 #include "vec3.h"
 #include "color.h"
+#include "ray.h"
+
 #include <iostream>
 
 color ray_color(const ray &r) {
-    return color(0, 0, 0);
+    vec3 unit_direction = unit_vector(r.direction());
+    auto a = 0.5 * (unit_direction.y() + 1.0);
+    return (1.0-a) * color(1.0, 1.0, 1.0) + a * color(0.5, 0.7, 1.0);
 }
 
 int main() {
@@ -48,10 +52,7 @@ int main() {
 
             ray r(camera_center, ray_direction);
 
-            auto r = double(i) / (image_width - 1);
-            auto g = double(j) / (image_height - 1);
-
-            auto pixel_color = color(r, g, 0);
+            color pixel_color = ray_color(r);
             write_color(std::cout, pixel_color);
         }
     }

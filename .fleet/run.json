@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "command",
+            "name": "Build",
+            "program": "cmake",
+            "args": [
+                "--build",
+                "$PROJECT_DIR$/build"
+            ]
+        },
+        {
+            "type": "command",
+            "name": "Run",
+            "dependsOn": [
+                "Build"
+            ],
+            "program": "$PROJECT_DIR$/build/inOneWeekend",
+            "args": [
+                "$PROJECT_DIR$/image.ppm"
+            ]
+        },
+    ]
+}
